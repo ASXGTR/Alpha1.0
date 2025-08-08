@@ -1,0 +1,46 @@
+title = "Alpha 1.0 Gitleaks Config"
+description = "Scan for real secrets, ignore Unity system noise"
+version = "2"
+
+[allowlist]
+description = "Ignore Unity system folders"
+paths = [
+  "Library/",
+  "Temp/",
+  "Obj/",
+  "Build/",
+  "Logs/",
+  "Packages/",
+  "ProjectSettings/",
+  "Library/PackageCache/"
+]
+
+[[rules]]
+description = "Generic API Key"
+id = "generic-api-key"
+regex = '''(?i)(api[_-]?key|access[_-]?token|auth[_-]?token|secret|password)[\s:=]+["']?[a-z0-9-_]{16,}["']?'''
+tags = ["key", "token", "auth"]
+
+[[rules]]
+description = "Unity Cloud Token"
+id = "unity-cloud-token"
+regex = '''(?i)(unity[_-]?cloud|unity[_-]?access)[\s:=]+["']?[a-z0-9-_]{16,}["']?'''
+tags = ["unity", "token"]
+
+[[rules]]
+description = "AWS Access Key"
+id = "aws-access-key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["aws", "key"]
+
+[[rules]]
+description = "Private RSA Key"
+id = "rsa-private-key"
+regex = '''-----BEGIN RSA PRIVATE KEY-----'''
+tags = ["rsa", "key"]
+
+[[rules]]
+description = "Slack Token"
+id = "slack-token"
+regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})'''
+tags = ["slack", "token"]

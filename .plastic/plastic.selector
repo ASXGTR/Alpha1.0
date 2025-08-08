@@ -1,0 +1,4 @@
+repository "Alpha 1.0/Alpha 1.0@5773910549899@cloud"
+  path "/"
+    br "/main"
+    co "/main"
