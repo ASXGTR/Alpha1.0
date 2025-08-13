@@ -1,0 +1,20 @@
+[
+    {
+        "term": "Ducktape",
+        "reason": "Satirical brand of duct tape used in crafting and repairs.",
+        "contextTag": "RepairMethod",
+        "isEasterEgg": true
+    },
+    {
+        "term": "inentional",
+        "reason": "Accidental typo turned into a dev diary joke.",
+        "contextTag": "DevDiary",
+        "isEasterEgg": false
+    },
+    {
+        "term": "Fallback",
+        "reason": "Designated backup behavior or stat set when primary function fails or is unavailable. Used in melee logic for ranged weapons, and in dev philosophy for emotional resilience.",
+        "contextTag": "CombatLogic",
+        "isEasterEgg": true
+    }
+]

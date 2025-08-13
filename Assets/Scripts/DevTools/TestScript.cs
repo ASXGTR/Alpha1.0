@@ -9,7 +9,7 @@ public class TestScript
 
     public static void Ping()
     {
-        // No-op method to ensure Unity sees a change
-        string ignored = _compilePing + "_Pinged";
+        // Intentional no-op to ensure Unity sees a change
+        _ = _compilePing + "_Pinged";
     }
 }

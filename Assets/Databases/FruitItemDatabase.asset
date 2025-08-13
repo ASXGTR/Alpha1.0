@@ -1,0 +1,1644 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8273b4b9c477b546a66091663d01211, type: 3}
+  m_Name: FruitItemDatabase
+  m_EditorClassIdentifier: 
+  fruitItems:
+  - itemID: apple_green_raw
+    displayName: Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 10
+    hydrationChange: 5
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 3
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    secondaryItemID: apple_green_seeds
+    minSecondaryYield: 1
+    maxSecondaryYield: 9
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - apple
+    - hunger
+    - hydration
+  - itemID: apple_green_sliced
+    displayName: Sliced Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 4
+    weight: 0.28
+    maxStackSize: 99
+    foodPoisoningChance: 2
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - apple
+    - green
+    - sliced
+  - itemID: apple_green_boiled
+    displayName: Boiled Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 12
+    hydrationChange: 4
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - boiled
+  - itemID: apple_green_grilled
+    displayName: Grilled Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 14
+    hydrationChange: 3
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - grilled
+  - itemID: apple_green_roasted
+    displayName: Roasted Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 13
+    hydrationChange: 2
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - roasted
+  - itemID: apple_green_fried
+    displayName: Fried Green Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 15
+    hydrationChange: 1
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - fried
+  - itemID: apple_red_raw
+    displayName: Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 11
+    hydrationChange: 6
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 2
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    secondaryItemID: apple_red_seeds
+    minSecondaryYield: 1
+    maxSecondaryYield: 9
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - apple
+    - hunger
+    - hydration
+  - itemID: apple_red_sliced
+    displayName: Sliced Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 9
+    hydrationChange: 4
+    weight: 0.3
+    maxStackSize: 99
+    foodPoisoningChance: 2
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - apple
+    - red
+    - sliced
+  - itemID: apple_red_boiled
+    displayName: Boiled Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 13
+    hydrationChange: 4
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - boiled
+  - itemID: apple_red_grilled
+    displayName: Grilled Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 15
+    hydrationChange: 3
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - grilled
+  - itemID: apple_red_roasted
+    displayName: Roasted Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 14
+    hydrationChange: 2
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - roasted
+  - itemID: apple_red_fried
+    displayName: Fried Red Apple
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 16
+    hydrationChange: 1
+    weight: 0.4
+    maxStackSize: 9
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - apple
+    - fried
+  - itemID: pear_raw
+    displayName: Pear
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 9
+    hydrationChange: 7
+    weight: 0.35
+    maxStackSize: 99
+    foodPoisoningChance: 2
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    secondaryItemID: pear_seeds
+    minSecondaryYield: 1
+    maxSecondaryYield: 4
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - pear
+    - hunger
+    - hydration
+  - itemID: pear_sliced
+    displayName: Sliced Pear
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 9
+    hydrationChange: 5
+    weight: 0.3
+    maxStackSize: 99
+    foodPoisoningChance: 2
+    salmonellaChance: 0
+    parasiteChance: 1
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - raw
+    - pear
+    - sliced
+    - hunger
+    - hydration
+  - itemID: pear_boiled
+    displayName: Boiled Pear
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 11
+    hydrationChange: 5
+    weight: 0.35
+    maxStackSize: 99
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - pear
+    - boiled
+  - itemID: pear_grilled
+    displayName: Grilled Pear
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 13
+    hydrationChange: 4
+    weight: 0.35
+    maxStackSize: 99
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - pear
+    - grilled
+  - itemID: pear_roasted
+    displayName: Roasted Pear
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 12
+    hydrationChange: 3
+    weight: 0.35
+    maxStackSize: 99
+    foodPoisoningChance: 1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cooked
+    - pear
+    - roasted
+  - itemID: banana_raw
+    displayName: Banana
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 10
+    hydrationChange: 5
+    weight: 0.25
+    maxStackSize: 20
+    foodPoisoningChance: 0.1
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - banana
+    - raw
+    - peelable
+  - itemID: banana_grilled
+    displayName: Grilled Banana
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 15
+    hydrationChange: 3
+    weight: 0.3
+    maxStackSize: 10
+    foodPoisoningChance: 0.05
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - banana
+    - cooked
+    - grilled
+  - itemID: banana_fried
+    displayName: Fried Banana
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 9
+    hydrationChange: 2
+    weight: 0.2
+    maxStackSize: 20
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - banana
+    - cooked
+    - fried
+    - organic
+    - tropical
+    - cooking_result
+  - itemID: orange_raw
+    displayName: Orange
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 12
+    hydrationChange: 8
+    weight: 0.3
+    maxStackSize: 20
+    foodPoisoningChance: 0.05
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 8
+    secondaryItemID: orange_seeds
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - fruit
+    - orange
+    - raw
+    - sliceable
+    - seeded
+    - peelable
+  - itemID: orange_sliced
+    displayName: Sliced Orange
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 6
+    weight: 0.15
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - orange
+    - sliced
+    - prepared
+    - hydrating
+    - citrus
+  - itemID: tomato_red
+    displayName: Red Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 6
+    weight: 0.15
+    maxStackSize: 50
+    foodPoisoningChance: 0.03
+    salmonellaChance: 0.01
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 6
+    secondaryItemID: tomato_seeds
+    minSecondaryYield: 2
+    maxSecondaryYield: 4
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - red
+    - raw
+    - sliceable
+    - seeded
+    - vegetable-adjacent
+    - ripe
+  - itemID: tomato_red_sliced
+    displayName: Sliced Red Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 5
+    weight: 0.12
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - red
+    - sliced
+    - prepared
+    - hydrating
+    - vegetable_like
+  - itemID: tomato_green
+    displayName: Green Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 3
+    weight: 0.15
+    maxStackSize: 50
+    foodPoisoningChance: 0.05
+    salmonellaChance: 0.02
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 6
+    secondaryItemID: tomato_seeds
+    minSecondaryYield: 2
+    maxSecondaryYield: 4
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - green
+    - raw
+    - sliceable
+    - seeded
+    - vegetable-adjacent
+    - unripe
+  - itemID: tomato_green_sliced
+    displayName: Sliced Green Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 4
+    weight: 0.12
+    maxStackSize: 40
+    foodPoisoningChance: 0.015
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - green
+    - sliced
+    - prepared
+    - hydrating
+    - vegetable_like
+  - itemID: tomato_red_grilled
+    displayName: Grilled Red Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 10
+    hydrationChange: 4
+    weight: 0.12
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - red
+    - cooked
+    - grilled
+    - vegetable-adjacent
+    - ripe
+    - cooking_result
+  - itemID: tomato_red_roasted
+    displayName: Roasted Red Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 9
+    hydrationChange: 3
+    weight: 0.12
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - red
+    - cooked
+    - roasted
+    - vegetable-adjacent
+    - ripe
+    - cooking_result
+  - itemID: tomato_green_grilled
+    displayName: Grilled Green Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 2
+    weight: 0.12
+    maxStackSize: 30
+    foodPoisoningChance: 0.02
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - green
+    - cooked
+    - grilled
+    - vegetable-adjacent
+    - unripe
+    - cooking_result
+  - itemID: tomato_green_roasted
+    displayName: Roasted Green Tomato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.12
+    maxStackSize: 30
+    foodPoisoningChance: 0.02
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - tomato
+    - green
+    - cooked
+    - roasted
+    - vegetable-adjacent
+    - unripe
+    - cooking_result
+  - itemID: peach_raw
+    displayName: Peach
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 10
+    hydrationChange: 7
+    weight: 0.25
+    maxStackSize: 20
+    foodPoisoningChance: 0.02
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 6
+    secondaryItemID: peach_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 1
+    tags:
+    - item
+    - food
+    - fruit
+    - peach
+    - raw
+    - sliceable
+    - seeded
+    - stone-fruit
+    - organic
+  - itemID: peach_sliced
+    displayName: Sliced Peach
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 4
+    weight: 0.125
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - peach
+    - sliced
+    - organic
+    - cooking_ingredient
+    - stone-fruit
+  - itemID: peach_grilled
+    displayName: Grilled Peach
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 3
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - peach
+    - cooked
+    - grilled
+    - stone-fruit
+    - cooking_result
+  - itemID: grapes_green
+    displayName: Green Grapes
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 9
+    weight: 0.2
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - grapes
+    - green
+    - raw
+    - seedless
+    - hydrating
+    - snackable
+  - itemID: grapes_red
+    displayName: Red Grapes
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 7
+    hydrationChange: 8
+    weight: 0.2
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - grapes
+    - red
+    - raw
+    - seedless
+    - hydrating
+    - snackable
+  - itemID: pumpkin_raw
+    displayName: Pumpkin
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 14
+    hydrationChange: 5
+    weight: 0.5
+    maxStackSize: 10
+    foodPoisoningChance: 0.02
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 6
+    maxSlices: 12
+    secondaryItemID: pumpkin_seeds
+    minSecondaryYield: 3
+    maxSecondaryYield: 6
+    tags:
+    - item
+    - food
+    - fruit
+    - pumpkin
+    - raw
+    - sliceable
+    - seeded
+    - organic
+    - autumnal
+    - survival_stewable
+  - itemID: pumpkin_sliced
+    displayName: Sliced Pumpkin
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 7
+    hydrationChange: 3
+    weight: 0.25
+    maxStackSize: 20
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 1
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - pumpkin
+    - sliced
+    - organic
+    - cooking_ingredient
+    - autumnal
+    - survival_stewable
+  - itemID: pumpkin_grilled
+    displayName: Grilled Pumpkin
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 12
+    hydrationChange: 2
+    weight: 0.4
+    maxStackSize: 15
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 1
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - pumpkin
+    - cooked
+    - grilled
+    - organic
+    - autumnal
+    - cooking_result
+  - itemID: pumpkin_roasted
+    displayName: Roasted Pumpkin
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 11
+    hydrationChange: 2
+    weight: 0.4
+    maxStackSize: 15
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - pumpkin
+    - cooked
+    - roasted
+    - organic
+    - autumnal
+    - cooking_result
+  - itemID: cherry_black_raw
+    displayName: Black Cherry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 4
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.015
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 2
+    secondaryItemID: cherry_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 1
+    tags:
+    - item
+    - food
+    - fruit
+    - cherry
+    - black
+    - raw
+    - sliceable
+    - seeded
+    - stone-fruit
+    - organic
+  - itemID: cherry_red_raw
+    displayName: Red Cherry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 4
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.015
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 2
+    secondaryItemID: cherry_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 1
+    tags:
+    - item
+    - food
+    - fruit
+    - cherry
+    - red
+    - raw
+    - sliceable
+    - seeded
+    - stone-fruit
+    - organic
+  - itemID: cherry_black_boiled
+    displayName: Boiled Black Cherry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 7
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cherry
+    - black
+    - cooked
+    - boiled
+    - stone-fruit
+    - organic
+    - cooking_result
+  - itemID: cherry_red_boiled
+    displayName: Boiled Red Cherry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 1
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - cherry
+    - red
+    - cooked
+    - boiled
+    - stone-fruit
+    - organic
+    - cooking_result
+  - itemID: melon_yellow_raw
+    displayName: Yellow Melon
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 10
+    hydrationChange: 9
+    weight: 0.4
+    maxStackSize: 15
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 8
+    secondaryItemID: melon_yellow_seeds
+    minSecondaryYield: 2
+    maxSecondaryYield: 4
+    tags:
+    - item
+    - food
+    - fruit
+    - melon
+    - yellow
+    - raw
+    - sliceable
+    - seeded
+    - hydrating
+    - organic
+    - summer
+  - itemID: melon_water_raw
+    displayName: Watermelon
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 12
+    hydrationChange: 12
+    weight: 0.5
+    maxStackSize: 10
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 1
+    minSlices: 6
+    maxSlices: 10
+    secondaryItemID: melon_water_seeds
+    minSecondaryYield: 3
+    maxSecondaryYield: 6
+    tags:
+    - item
+    - food
+    - fruit
+    - melon
+    - watermelon
+    - raw
+    - sliceable
+    - seeded
+    - hydrating
+    - organic
+    - summer
+  - itemID: melon_yellow_sliced
+    displayName: Sliced Yellow Melon
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 6
+    weight: 0.2
+    maxStackSize: 20
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - melon
+    - yellow
+    - sliced
+    - hydrating
+    - organic
+    - summer
+    - snackable
+  - itemID: melon_water_sliced
+    displayName: Sliced Watermelon
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 8
+    weight: 0.25
+    maxStackSize: 20
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - melon
+    - watermelon
+    - sliced
+    - hydrating
+    - organic
+    - summer
+    - snackable
+  - itemID: strawberry_raw
+    displayName: Strawberry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 5
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - strawberry
+    - raw
+    - organic
+    - hydrating
+    - berry
+    - steamable
+  - itemID: strawberry_steamed
+    displayName: Steamed Strawberry
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 3
+    weight: 0.1
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeBoiled: 0
+    canBeGrilled: 0
+    canBeRoasted: 0
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - fruit
+    - strawberry
+    - cooked
+    - steamed
+    - organic
+    - berry
+    - cooking_result

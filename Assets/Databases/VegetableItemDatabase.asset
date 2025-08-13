@@ -1,0 +1,2360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6424d755274598c4e81966de115c632f, type: 3}
+  m_Name: VegetableItemDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - itemID: red_onion_raw
+    displayName: Red Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 6
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: red_onion_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - red
+    - raw
+    - sliceable
+    - fryable
+    - plantable
+    - seed_source
+  - itemID: red_onion_sliced
+    displayName: Sliced Red Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - red
+    - sliced
+    - prepared
+  - itemID: red_onion_fried
+    displayName: Fried Red Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - red
+    - cooked
+    - fried
+  - itemID: white_onion_raw
+    displayName: White Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 2
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 6
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: white_onion_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - white
+    - raw
+    - sliceable
+    - fryable
+    - plantable
+    - seed_source
+  - itemID: white_onion_sliced
+    displayName: Sliced White Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 1
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - white
+    - sliced
+    - prepared
+  - itemID: white_onion_fried
+    displayName: Fried White Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - white
+    - cooked
+    - fried
+  - itemID: spring_onion_raw
+    displayName: Spring Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 3
+    weight: 0.15
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: spring_onion_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - spring
+    - raw
+    - sliceable
+    - fryable
+    - plantable
+    - seed_source
+  - itemID: spring_onion_sliced
+    displayName: Sliced Spring Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 1
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - spring
+    - sliced
+    - prepared
+  - itemID: spring_onion_fried
+    displayName: Fried Spring Onion
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.15
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - onion
+    - spring
+    - cooked
+    - fried
+  - itemID: carrot_raw
+    displayName: Carrot
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 3
+    weight: 0.15
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 8
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: carrot_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - vegetable
+    - carrot
+    - raw
+    - sliceable
+    - plantable
+    - seed_source
+  - itemID: carrot_sliced
+    displayName: Sliced Carrot
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - carrot
+    - sliced
+    - prepared
+  - itemID: carrot_steamed
+    displayName: Steamed Carrot
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 2
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - carrot
+    - cooked
+    - steamed
+  - itemID: carrot_boiled
+    displayName: Boiled Carrot
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 3
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - carrot
+    - cooked
+    - boiled
+  - itemID: potato_raw
+    displayName: Potato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.25
+    maxStackSize: 25
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 6
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: potato_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - potato
+    - raw
+    - sliceable
+    - plantable
+    - seed_source
+  - itemID: potato_boiled
+    displayName: Boiled Potato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 7
+    hydrationChange: 2
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - potato
+    - cooked
+    - boiled
+  - itemID: potato_roasted
+    displayName: Roasted Potato
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 8
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.003
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - potato
+    - cooked
+    - roasted
+  - itemID: cucumber_raw
+    displayName: Cucumber
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 6
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 6
+    canBeBoiled: 0
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: cucumber_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - vegetable
+    - cucumber
+    - raw
+    - sliceable
+    - steamable
+    - seeded
+  - itemID: cucumber_sliced
+    displayName: Sliced Cucumber
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 4
+    weight: 0.12
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cucumber
+    - sliced
+    - prepared
+  - itemID: cucumber_steamed
+    displayName: Steamed Cucumber
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 3
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.003
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cucumber
+    - cooked
+    - steamed
+  - itemID: bell_pepper_raw
+    displayName: Bell Pepper
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 4
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 3
+    maxSlices: 5
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: bell_pepper_seed
+    minSecondaryYield: 2
+    maxSecondaryYield: 4
+    tags:
+    - item
+    - food
+    - vegetable
+    - pepper
+    - bell
+    - raw
+    - sliceable
+    - roastable
+    - plantable
+    - seed_source
+  - itemID: bell_pepper_sliced
+    displayName: Sliced Bell Pepper
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 3
+    weight: 0.12
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - pepper
+    - bell
+    - sliced
+    - prepared
+  - itemID: bell_pepper_roasted
+    displayName: Roasted Bell Pepper
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 2
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.003
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - pepper
+    - bell
+    - cooked
+    - roasted
+  - itemID: broccoli_raw
+    displayName: Broccoli
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 3
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - broccoli
+    - raw
+    - steamable
+    - grillable
+    - roastable
+  - itemID: broccoli_steamed
+    displayName: Steamed Broccoli
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 2
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - broccoli
+    - cooked
+    - steamed
+  - itemID: broccoli_grilled
+    displayName: Grilled Broccoli
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - broccoli
+    - cooked
+    - grilled
+  - itemID: broccoli_roasted
+    displayName: Roasted Broccoli
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 6
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - broccoli
+    - cooked
+    - roasted
+  - itemID: leek_raw
+    displayName: Leek
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 3
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.008
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 5
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: leek_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - leek
+    - raw
+    - sliceable
+    - plantable
+    - seed_source
+    - boilable
+    - steamed
+    - grillable
+    - roastable
+  - itemID: leek_grilled
+    displayName: Grilled Leek
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.2
+    maxStackSize: 30
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - leek
+    - grilled
+    - cooked
+    - prepared
+  - itemID: garlic_raw
+    displayName: Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - raw
+    - sliceable
+    - fryable
+    - roastable
+    - plantable
+    - seedless
+  - itemID: garlic_sliced
+    displayName: Sliced Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - sliced
+    - raw
+    - fryable
+    - roastable
+    - prepared
+  - itemID: garlic_fried
+    displayName: Fried Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 0
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - fried
+    - cooked
+    - prepared
+  - itemID: garlic_roasted
+    displayName: Roasted Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - roasted
+    - cooked
+    - prepared
+  - itemID: garlic_raw
+    displayName: Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 2
+    maxSlices: 4
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - raw
+    - sliceable
+    - fryable
+    - roastable
+    - plantable
+    - seedless
+  - itemID: garlic_sliced
+    displayName: Sliced Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - sliced
+    - raw
+    - fryable
+    - roastable
+    - prepared
+  - itemID: garlic_fried
+    displayName: Fried Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 0
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - fried
+    - cooked
+    - prepared
+  - itemID: garlic_roasted
+    displayName: Roasted Garlic
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - garlic
+    - roasted
+    - cooked
+    - prepared
+  - itemID: cabbage_raw
+    displayName: Cabbage
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 4
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 8
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: cabbage_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - vegetable
+    - cabbage
+    - raw
+    - sliceable
+    - boilable
+    - roastable
+    - grillable
+    - plantable
+    - seed_source
+  - itemID: cabbage_sliced
+    displayName: Sliced Cabbage
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 3
+    weight: 0.2
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cabbage
+    - sliced
+    - raw
+    - boilable
+    - roastable
+    - grillable
+    - prepared
+  - itemID: cabbage_boiled
+    displayName: Boiled Cabbage
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 2
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cabbage
+    - boiled
+    - cooked
+    - prepared
+  - itemID: cabbage_roasted
+    displayName: Roasted Cabbage
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cabbage
+    - roasted
+    - cooked
+    - prepared
+  - itemID: cabbage_grilled
+    displayName: Grilled Cabbage
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - cabbage
+    - grilled
+    - cooked
+    - prepared
+  - itemID: kale_raw
+    displayName: Kale
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 3
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - kale
+    - raw
+    - boilable
+    - steammable
+    - fryable
+    - leafy
+    - nonplantable
+  - itemID: kale_raw
+    displayName: Kale
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 3
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - kale
+    - raw
+    - boilable
+    - steammable
+    - fryable
+    - leafy
+    - nonplantable
+  - itemID: kale_boiled
+    displayName: Boiled Kale
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - kale
+    - boiled
+    - cooked
+    - prepared
+  - itemID: kale_steamed
+    displayName: Steamed Kale
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - kale
+    - steamed
+    - cooked
+    - prepared
+  - itemID: kale_fried
+    displayName: Fried Kale
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - kale
+    - fried
+    - cooked
+    - prepared
+  - itemID: lettuce_raw
+    displayName: Lettuce
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 4
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 1
+    minSlices: 4
+    maxSlices: 8
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: lettuce_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - vegetable
+    - lettuce
+    - raw
+    - sliceable
+    - boilable
+    - steammable
+    - plantable
+    - seed_source
+  - itemID: lettuce_sliced
+    displayName: Sliced Lettuce
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 1
+    hydrationChange: 3
+    weight: 0.2
+    maxStackSize: 40
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - lettuce
+    - sliced
+    - raw
+    - boilable
+    - steammable
+    - prepared
+  - itemID: lettuce_steamed
+    displayName: Steamed Lettuce
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - lettuce
+    - steamed
+    - cooked
+    - prepared
+  - itemID: lettuce_boiled
+    displayName: Boiled Lettuce
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.25
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - lettuce
+    - boiled
+    - cooked
+    - prepared
+  - itemID: sweetcorn_raw
+    displayName: Sweetcorn
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: sweetcorn_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 2
+    tags:
+    - item
+    - food
+    - vegetable
+    - sweetcorn
+    - raw
+    - boilable
+    - roastable
+    - grillable
+    - fryable
+    - plantable
+    - seed_source
+  - itemID: sweetcorn_boiled
+    displayName: Boiled Sweetcorn
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 2
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - sweetcorn
+    - boiled
+    - cooked
+    - prepared
+  - itemID: sweetcorn_grilled
+    displayName: Grilled Sweetcorn
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - sweetcorn
+    - grilled
+    - cooked
+    - prepared
+  - itemID: sweetcorn_roasted
+    displayName: Roasted Sweetcorn
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 5
+    hydrationChange: 1
+    weight: 0.3
+    maxStackSize: 30
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0
+    parasiteChance: 0
+    zombiePathogenChance: 0
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - sweetcorn
+    - roasted
+    - cooked
+    - prepared
+  - itemID: seaweed_raw
+    displayName: Seaweed (Raw)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 1
+    hydrationChange: 3
+    weight: 0.1
+    maxStackSize: 50
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0.005
+    parasiteChance: 0.008
+    zombiePathogenChance: 0.0001
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - seaweed
+    - raw
+    - boilable
+    - hydrating
+    - aquatic
+    - plant
+  - itemID: seaweed_boiled
+    displayName: Seaweed (Boiled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 50
+    foodPoisoningChance: 0.003
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - seaweed
+    - boiled
+    - cooked
+    - hydrating
+    - aquatic
+    - plant
+  - itemID: seaweed_dried
+    displayName: Seaweed (Dried)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 0
+    weight: 0.05
+    maxStackSize: 100
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - seaweed
+    - dried
+    - cooked
+    - preserved
+    - aquatic
+    - plant
+  - itemID: mushroom_brown_raw
+    displayName: Brown Mushroom
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.01
+    salmonellaChance: 0.005
+    parasiteChance: 0.006
+    zombiePathogenChance: 0.0001
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - brown
+    - raw
+    - boilable
+    - fryable
+    - roastable
+    - grillable
+    - fungus
+  - itemID: mushroom_white_raw
+    displayName: White Mushroom
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.008
+    salmonellaChance: 0.004
+    parasiteChance: 0.005
+    zombiePathogenChance: 0.0001
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 0
+    canBeFried: 1
+    canBeRoasted: 1
+    canBeGrilled: 1
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - white
+    - raw
+    - boilable
+    - fryable
+    - roastable
+    - grillable
+    - fungus
+  - itemID: mushroom_spotted_raw
+    displayName: Spotted Mushroom
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 1
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.03
+    salmonellaChance: 0.01
+    parasiteChance: 0.015
+    zombiePathogenChance: 0.0005
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - spotted
+    - raw
+    - boilable
+    - fryable
+    - roastable
+    - grillable
+    - fungus
+    - suspicious
+  - itemID: mushroom_brown_boiled
+    displayName: Brown Mushroom (Boiled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - brown
+    - boiled
+    - cooked
+    - fungus
+  - itemID: mushroom_brown_grilled
+    displayName: Brown Mushroom (Grilled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.002
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - brown
+    - grilled
+    - cooked
+    - fungus
+  - itemID: mushroom_brown_fried
+    displayName: Brown Mushroom (Fried)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - brown
+    - fried
+    - cooked
+    - fungus
+  - itemID: mushroom_brown_roasted
+    displayName: Brown Mushroom (Roasted)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - brown
+    - roasted
+    - cooked
+    - fungus
+  - itemID: mushroom_white_boiled
+    displayName: White Mushroom (Boiled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.0015
+    salmonellaChance: 0.0008
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - white
+    - boiled
+    - cooked
+    - fungus
+  - itemID: mushroom_white_grilled
+    displayName: White Mushroom (Grilled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.0015
+    salmonellaChance: 0.0008
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - white
+    - grilled
+    - cooked
+    - fungus
+  - itemID: mushroom_white_fried
+    displayName: White Mushroom (Fried)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.0005
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - white
+    - fried
+    - cooked
+    - fungus
+  - itemID: mushroom_white_roasted
+    displayName: White Mushroom (Roasted)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 4
+    hydrationChange: 1
+    weight: 0.1
+    maxStackSize: 40
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.0005
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00005
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - mushroom
+    - white
+    - roasted
+    - cooked
+    - fungus
+  - itemID: peas_raw
+    displayName: Peas (Raw)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 2
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 60
+    foodPoisoningChance: 0.005
+    salmonellaChance: 0.002
+    parasiteChance: 0.003
+    zombiePathogenChance: 0.00005
+    isCooked: 0
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 1
+    canBeSteamed: 1
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: pea_seed
+    minSecondaryYield: 1
+    maxSecondaryYield: 3
+    tags:
+    - item
+    - food
+    - vegetable
+    - peas
+    - raw
+    - boilable
+    - steamable
+    - plantable
+    - seed_source
+    - hydrating
+  - itemID: peas_boiled
+    displayName: Peas (Boiled)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 2
+    weight: 0.1
+    maxStackSize: 60
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00002
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - peas
+    - boiled
+    - cooked
+    - hydrating
+  - itemID: peas_steamed
+    displayName: Peas (Steamed)
+    icon: {fileID: 0}
+    prefab: {fileID: 0}
+    hungerChange: 3
+    hydrationChange: 3
+    weight: 0.1
+    maxStackSize: 60
+    foodPoisoningChance: 0.001
+    salmonellaChance: 0.001
+    parasiteChance: 0.001
+    zombiePathogenChance: 0.00002
+    isCooked: 1
+    canBeSliced: 0
+    minSlices: 0
+    maxSlices: 0
+    canBeBoiled: 0
+    canBeSteamed: 0
+    canBeFried: 0
+    canBeRoasted: 0
+    canBeGrilled: 0
+    secondaryItemID: 
+    minSecondaryYield: 0
+    maxSecondaryYield: 0
+    tags:
+    - item
+    - food
+    - vegetable
+    - peas
+    - steamed
+    - cooked
+    - hydrating

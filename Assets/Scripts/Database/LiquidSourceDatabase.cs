@@ -3,12 +3,17 @@ using UnityEngine;
 
 // 🧃 Unified Liquid Entry (Items + Environmental Sources)
 [System.Serializable]
+
 public class LiquidEntry
 {
     public string liquidID;
     public string displayName;
     public LiquidType type;
     public LiquidOriginType originType;
+    public string description;
+    public List<string> tags = new List<string>();
+
+    public bool HasTag(string tag) => tags.Contains(tag);
 
     public bool isCollectible;
     public bool canBeBoiled;
@@ -20,12 +25,24 @@ public class LiquidEntry
     public float temperatureChange;
 
     public FoodDiseaseProfile diseaseProfile = new();
+
+    // 🆕 Container Metadata
+    public bool isReusableContainer = false;     // Can this item be reused after emptying?
+    public bool isFillable = false;              // Can this item be refilled from a source?
+    public bool isBoiled = false;                // Has this liquid been boiled?
+    public bool isCooledAfterBoil = false;       // Has it cooled after boiling?
+
+    // 🆕 Narrative Tag
+    public string hydrationLoreTag = "";         // Optional flavor text for hydration narrative
 }
 
 // 🧃 Liquid Source Database (ScriptableObject)
 [CreateAssetMenu(fileName = "LiquidSourceDatabase", menuName = "GameData/LiquidSourceDatabase")]
 public class LiquidSourceDatabase : ScriptableObject
 {
+    public List<LiquidEntry> liquidSources;
+
+
     public List<LiquidEntry> liquids = new()
     {
         new LiquidEntry

@@ -2,18 +2,23 @@
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using static MeatItemDatabase;
+
 
 public static class MasterItemDatabaseManager
 {
     public static List<ItemData> allItems = new();
-
-    static MasterItemDatabaseManager()
+  static MasterItemDatabaseManager()
     {
         // 🍏 Fruits
         var fruitDB = LoadDatabaseAsset<FruitItemDatabase>("FruitItemDatabase");
         if (fruitDB != null)
         {
             allItems.AddRange(fruitDB.fruitItems.Select(f => ConvertFruitToItemData(f)));
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ FruitItemDatabase missing during MasterItemDatabaseManager init. Run DevTools > Scan & Scaffold to fix.");
         }
 
         // 🐟 Fish (includes crab, mussel, alligator)
@@ -22,13 +27,20 @@ public static class MasterItemDatabaseManager
         {
             allItems.AddRange(fishDB.fishItems.Select(f => ConvertFishToItemData(f)));
         }
-
+        else
+        {
+            Debug.LogWarning("⚠️ FishItemDatabase missing during MasterItemDatabaseManager init.");
+        }
 
         // 🥫 Tinned Items
         var tinnedDB = LoadDatabaseAsset<TinnedItemDatabase>("TinnedItemDatabase");
         if (tinnedDB != null)
         {
             allItems.AddRange(tinnedDB.items);
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ TinnedItemDatabase missing during MasterItemDatabaseManager init.");
         }
 
         // 🥦 Vegetables
@@ -37,30 +49,34 @@ public static class MasterItemDatabaseManager
         {
             allItems.AddRange(vegDB.items.Select(v => ConvertVegetableToItemData(v)));
         }
-
-
-        // 🥩 Meat (future activation)
-        // var meatDB = LoadDatabaseAsset<MeatItemDatabase>("MeatItemDatabase");
-        // if (meatDB != null)
-        // {
-        //     allItems.AddRange(meatDB.meatItems.Select(m => ConvertMeatToItemData(m)));
-        // }
-    }
-
-    private static T LoadDatabaseAsset<T>(string assetName) where T : ScriptableObject
-    {
-        string[] guids = AssetDatabase.FindAssets(assetName + " t:" + typeof(T).Name);
-        foreach (string guid in guids)
+        else
         {
-            string path = AssetDatabase.GUIDToAssetPath(guid);
-            if (System.IO.Path.GetFileNameWithoutExtension(path) == assetName)
-            {
-                return AssetDatabase.LoadAssetAtPath<T>(path);
-            }
+            Debug.LogWarning("⚠️ VegetableItemDatabase missing during MasterItemDatabaseManager init.");
         }
-        Debug.LogWarning($"⚠️ Could not find asset named '{assetName}' of type {typeof(T).Name}");
-        return null;
+
+        // 🥩 Meat
+        var meatDB = LoadDatabaseAsset<MeatItemDatabase>("MeatItemDatabase");
+        if (meatDB != null)
+        {
+            allItems.AddRange(meatDB.meatItems.Select(m => ConvertMeatToItemData(m)));
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ MeatItemDatabase missing during MasterItemDatabaseManager init.");
+        }
+
+        // 🌱 Seeds
+        var seedDB = LoadDatabaseAsset<SeedItemDatabase>("SeedItemDatabase");
+        if (seedDB != null)
+        {
+            allItems.AddRange(seedDB.seedItems.Select(s => ConvertSeedToItemData(s)));
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ SeedItemDatabase missing during MasterItemDatabaseManager init.");
+        }
     }
+
 
     public static ItemData ConvertFruitToItemData(FruitItemDatabase.FruitItemEntry fruit)
     {
@@ -138,46 +154,81 @@ public static class MasterItemDatabaseManager
         };
     }
 
-    // 🥩 Future meat converter (to be added when MeatItemDatabase is ready)
-    // public static ItemData ConvertMeatToItemData(MeatItemEntry meat)
-    // {
-    //     return new ItemData
-    //     {
-    //         itemID = meat.itemID,
-    //         displayName = meat.displayName,
-    //         hungerChange = meat.hungerChange,
-    //         hydrationChange = meat.hydrationChange,
-    //         healthChange = 0f,
-    //         temperatureChange = 0f,
-    //         isCooked = meat.isCooked,
-    //         tags = meat.tags,
-    //         canBeBoiled = meat.canBeBoiled,
-    //         canBeGrilled = meat.canBeGrilled,
-    //         canBeRoasted = meat.canBeRoasted,
-    //         canBeSteamed = meat.canBeSteamed,
-    //         canBeFried = meat.canBeFried,
-    //         canBeSliced = meat.canBeSliced,
-    //         minSlices = meat.minSlices,
-    //         maxSlices = meat.maxSlices,
-    //         secondaryItemID = meat.secondaryItemID,
-    //         minSecondaryYield = meat.minSecondaryYield,
-    //         maxSecondaryYield = meat.maxSecondaryYield,
-    //         isStackable = true,
-    //         maxStackSize = meat.maxStackSize,
-    //         weight = meat.weight,
-    //         condition = 100,
-    //         diseaseProfile = new FoodDiseaseProfile
-    //         {
-    //             foodPoisoningChance = meat.foodPoisoningChance,
-    //             salmonellaChance = meat.salmonellaChance,
-    //             parasiteChance = meat.parasiteChance,
-    //             zombiePathogenChance = meat.zombiePathogenChance,
-    //             madCowChance = meat.madCowChance,
-    //             avianFluChance = meat.avianFluChance,
-    //             cannibalDiseaseChance = meat.cannibalDiseaseChance
-    //         }
-    //     };
-    // }
+    public static ItemData ConvertSeedToItemData(SeedItemDatabase.SeedItemEntry seed)
+
+    {
+        return new ItemData
+    {
+        itemID = seed.itemID,
+        displayName = seed.displayName,
+        hungerChange = seed.hungerChange,
+        hydrationChange = seed.hydrationChange,
+        healthChange = 0f,
+        temperatureChange = 0f,
+        isCooked = seed.isCooked,
+        tags = seed.tags,
+        canBeBoiled = seed.canBeBoiled,
+        canBeGrilled = seed.canBeGrilled,
+        canBeRoasted = seed.canBeRoasted,
+        canBeSteamed = seed.canBeSteamed,
+        canBeFried = seed.canBeFried,
+        canBeSliced = seed.canBeSliced,
+        minSlices = seed.minSlices,
+        maxSlices = seed.maxSlices,
+        secondaryItemID = seed.secondaryItemID,
+        minSecondaryYield = seed.minSecondaryYield,
+        maxSecondaryYield = seed.maxSecondaryYield,
+        isStackable = true,
+        maxStackSize = seed.maxStackSize,
+        weight = seed.weight,
+        condition = 100,
+        diseaseProfile = new FoodDiseaseProfile
+        {
+            foodPoisoningChance = seed.foodPoisoningChance,
+            salmonellaChance = seed.salmonellaChance,
+            parasiteChance = seed.parasiteChance,
+            zombiePathogenChance = seed.zombiePathogenChance
+        }
+    };
+}
+    public static ItemData ConvertMeatToItemData(MeatItemEntry meat)
+    {
+        return new ItemData
+        {
+            itemID = meat.itemID,
+            displayName = meat.displayName,
+            hungerChange = meat.hungerChange,
+            hydrationChange = meat.hydrationChange,
+            healthChange = 0f,
+            temperatureChange = 0f,
+            isCooked = meat.isCooked,
+            tags = meat.tags,
+            canBeBoiled = meat.canBeBoiled,
+            canBeGrilled = meat.canBeGrilled,
+            canBeRoasted = meat.canBeRoasted,
+            canBeSteamed = meat.canBeSteamed,
+            canBeFried = meat.canBeFried,
+            canBeSliced = meat.canBeSliced,
+            minSlices = meat.minSlices,
+            maxSlices = meat.maxSlices,
+            secondaryItemID = meat.secondaryItemID,
+            minSecondaryYield = meat.minSecondaryYield,
+            maxSecondaryYield = meat.maxSecondaryYield,
+            isStackable = true,
+            maxStackSize = meat.maxStackSize,
+            weight = meat.weight,
+            condition = 100,
+            diseaseProfile = new FoodDiseaseProfile
+            {
+                foodPoisoningChance = meat.foodPoisoningChance,
+                salmonellaChance = meat.salmonellaChance,
+                parasiteChance = meat.parasiteChance,
+                zombiePathogenChance = meat.zombiePathogenChance,
+                mercuryPoisoningChance = 0f,
+                waterborneVirusChance = 0f
+            }
+        };
+    }
 
     public static ItemData ConvertFishToItemData(FishItemEntry fish)
     {
@@ -218,7 +269,6 @@ public static class MasterItemDatabaseManager
         };
     }
 
-
     public static ItemData GetItemByID(string id)
     {
         return allItems.FirstOrDefault(item => item.itemID == id);
@@ -232,5 +282,22 @@ public static class MasterItemDatabaseManager
     public static List<ItemData> GetItemsByTag(string tag)
     {
         return allItems.Where(item => item.tags != null && item.tags.Contains(tag)).ToList();
+    }
+
+    private static T LoadDatabaseAsset<T>(string assetName) where T : ScriptableObject
+    {
+        string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);
+        foreach (string guid in guids)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            string name = System.IO.Path.GetFileNameWithoutExtension(path);
+            if (name == assetName)
+            {
+                return AssetDatabase.LoadAssetAtPath<T>(path);
+            }
+        }
+
+        Debug.LogWarning($"⚠️ Could not find asset named '{assetName}' of type {typeof(T).Name}");
+        return null;
     }
 }

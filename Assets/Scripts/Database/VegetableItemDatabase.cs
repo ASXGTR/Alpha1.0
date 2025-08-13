@@ -1603,6 +1603,7 @@ new VegetableItemEntry
     tags = new List<string> { "item", "food", "vegetable", "mushroom", "white", "fried", "cooked", "fungus" }
 },
 
+
 new VegetableItemEntry
 {
     itemID = "mushroom_white_roasted",
@@ -1714,7 +1715,39 @@ new VegetableItemEntry
     minSecondaryYield = 0,
     maxSecondaryYield = 0,
     tags = new List<string> { "item", "food", "vegetable", "peas", "steamed", "cooked", "hydrating" }
+},
+new VegetableItemEntry
+{
+    itemID = "pickle_fermented_unstable",
+    displayName = "Pickle",
+    icon = null,
+    prefab = null,
+    hungerChange = 5,
+    hydrationChange = -1,
+    weight = 0.3f,
+    maxStackSize = 10,
+    foodPoisoningChance = 0.002f,
+    salmonellaChance = 0.0002f,
+    parasiteChance = 0.0005f,
+    zombiePathogenChance = 0.0001f,
+    isCooked = false,
+    canBeBoiled = false,
+    canBeSteamed = false,
+    canBeFried = false,
+    canBeRoasted = false,
+    canBeGrilled = false,
+    canBeSliced = false,
+    minSlices = 0,
+    maxSlices = 0,
+    secondaryItemID = null,
+    minSecondaryYield = 0,
+    maxSecondaryYield = 0,
+    tags = new List<string>
+    {
+        "item", "food", "vegetable", "fermented", "pickle", "brined", "unstable", "egghunt", "suspicious", "legacy"
+    }
 }
+
 
 
 };

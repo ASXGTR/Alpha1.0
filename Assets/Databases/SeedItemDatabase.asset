@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9ae4e52ee18a84f8f05855f5d13156, type: 3}
+  m_Name: SeedItemDatabase
+  m_EditorClassIdentifier: 
+  seedItems:
+  - itemID: apple_green_seeds
+    displayName: Green Apple Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 3.5
+    maxYield: 3
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.05
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - apple
+  - itemID: apple_red_seeds
+    displayName: Red Apple Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 3.5
+    maxYield: 3
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.05
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - apple
+    - red
+  - itemID: pear_seeds
+    displayName: Pear Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 7
+    maxYield: 1
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.05
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - pear
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: orange_seeds
+    displayName: Orange Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 6
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.05
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - orange
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: tomato_seeds
+    displayName: Tomato Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 4
+    maxYield: 3
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.02
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - tomato
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: peach_seed
+    displayName: Peach Seed
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 5
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.03
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - peach
+    - fruit-derived
+    - stone-fruit
+    - organic
+    - non-edible
+  - itemID: pumpkin_seeds
+    displayName: Pumpkin Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 6
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.04
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - pumpkin
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: cherry_seed
+    displayName: Cherry Seed
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 5
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.02
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - cherry
+    - fruit-derived
+    - stone-fruit
+    - organic
+    - non-edible
+  - itemID: melon_yellow_seeds
+    displayName: Yellow Melon Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 5
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.03
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - melon
+    - yellow
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: melon_water_seeds
+    displayName: Watermelon Seeds
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 6
+    maxYield: 2
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.03
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - melon
+    - watermelon
+    - fruit-derived
+    - organic
+    - non-edible
+  - itemID: sweetcorn_seed
+    displayName: Sweetcorn Seed
+    icon: {fileID: 0}
+    cropPrefab: {fileID: 0}
+    growthTimeDays: 5
+    maxYield: 3
+    regrowsAfterHarvest: 0
+    requiresFertilizer: 1
+    requiresWatering: 1
+    maxStackSize: 99
+    weight: 0.03
+    tags:
+    - item
+    - seed
+    - farming
+    - growable
+    - sweetcorn
+    - vegetable-derived
+    - organic
+    - non-edible
