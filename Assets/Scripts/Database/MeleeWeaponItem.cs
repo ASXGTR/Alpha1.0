@@ -6,7 +6,9 @@ public enum MeleeType
 {
     Blunt,      // Hammers, bats, wrenches
     Sharp,      // Knives, axes, cleavers
-    Thrown      // Melee weapons with ranged fallback
+    Thrown,      // Melee weapons with ranged fallback
+    Piercing,   // Spears, bayonets, sharp tools
+    None,       // No melee capabilities
 }
 
 public enum MeleeSubclass
@@ -17,17 +19,23 @@ public enum MeleeSubclass
     Kitchen,    // Cleavers, knives, culinary horror
     Military,   // Bayonets, trench clubs
     Ritual,     // Ceremonial blades, improvised relics
-    Improvised  // Anything held together by hope and twine
+    Improvised, // Anything held together by hope and twine
+    Utility,    // Utility items with melee capabilities
+    Surgical,   // Surgical tools with melee capabilities
 }
-
 public enum RepairMethod
 {
-    ToolKit,
     Ducktape,
+    ToolKit,
+    ToolRepairKit,
     Glue,
     CableTies,
     Welding,
-    None
+    None,
+    WeaponRepairKit,
+    ScrapMetal,
+    ElectricalRepairKit,
+    Rope,
 }
 
 // 🪓 Modular Melee Artifact

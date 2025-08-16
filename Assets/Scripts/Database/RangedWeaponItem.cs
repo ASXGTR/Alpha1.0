@@ -1,45 +1,132 @@
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-[Serializable]
+public enum WeaponCategory
+{
+    // 🔫 Firearms
+    Handgun,
+    AR_Pistol,
+    SMG,
+    Rifle,
+    SniperRifle,
+    Shotgun,
+    Launcher,
+    GrenadeLauncher,
+    AssaultRifle,
+    Special,
+
+    // 🎯 Air & Archaic
+    AirPistol,
+    AirRifle,
+    Bow,
+    Crossbow,
+
+    // 🪀 Utility & Throwable
+    Thrown,
+    Utility,
+
+    // 🪓 Close Combat
+    Melee,
+
+    // 🧩 Legacy / Generic
+    Gun
+}
+
+public enum AttachmentType
+{
+    Sight,
+    Optic,
+    Muzzle,
+    Magazine,
+    Utility,
+    Grip,
+    Stock,
+    Flashlight,
+    Rail,
+
+}
+
+public enum FireMode
+{
+    Semi,
+    Auto,
+    Selective // Supports both, switchable
+}
+
+[System.Serializable]
+public class WeaponStatModifier
+{
+    public float accuracy;
+    public float recoil;
+    public float weight;
+    public int ammoCapacity;
+    public float zoom;
+    public float semiAutoRate;
+
+    // 🔄 New field for reload speed multiplier
+    public float reloadModifier;
+
+    public static WeaponStatModifier FromFloats(
+        float accuracy = 0f,
+        float recoil = 0f,
+        float weight = 0f,
+        int ammoCapacity = 0,
+        float zoom = 1f,
+        float reloadModifier = 1f
+    )
+    {
+        return new WeaponStatModifier
+        {
+            accuracy = accuracy,
+            recoil = recoil,
+            weight = weight,
+            ammoCapacity = ammoCapacity,
+            zoom = zoom,
+            reloadModifier = reloadModifier
+        };
+    }
+}
+
+[System.Serializable]
+public class WeaponAttachment
+{
+    public string attachmentName;
+    public AttachmentType type;
+    public WeaponStatModifier statModifier;
+    public AmmoType compatibleAmmoType;
+    public string description;
+    public string loreTag;
+}
+
+[System.Serializable]
 public class RangedWeaponItem
 {
     public string weaponName;
-    public WeaponCategory category; // Gun, Bow, Crossbow, Thrown
+    public WeaponCategory category;
     public List<AmmoType> compatibleAmmoTypes;
-
-    // Ranged combat stats
-    public float fireRate;
+    public float fireRate; // Default rate (usually full-auto)
     public float effectiveRange;
     public float recoil;
     public float accuracy;
-
-    // Expanded ranged impact values
-    public float baseDamage;         // Primary ranged damage
-    public float shock;              // Physical shock (stagger, knockback)
-    public float force;              // Velocity-based impact
-    public float pierce;             // Armor penetration
-    public float bleedChance;        // Chance to cause bleeding
-    public float electricShock;      // Only used by taser-type weapons
-
-    // Fallback melee stats (used when out of ammo or forced into melee)
+    public float baseDamage;
+    public float shock;
+    public float force;
+    public float pierce;
+    public float bleedChance;
+    public float electricShock;
     public float meleeRange;
     public float meleeDamage;
-    public float meleeShock;         // Physical impact from buttstock/pistol whip
+    public float meleeShock;
     public float staminaCost;
     public float meleeBleedChance;
-    public float stunChance;         // Can be triggered by melee or taser dry stun
-
-    // General properties
+    public float stunChance;
     public float condition;
     public float weight;
     public bool isAutomatic;
     public bool canFireWithoutAmmo;
-
-    // Attachments
+    public int chamberCapacity;
+    public int internalAmmoCapacity;
+    public FireMode fireMode; // 🔫 New field for fire mode
     public List<WeaponAttachment> attachments;
-
-    // Lore & dev diary
-    public string loreTag;
-    public string intentionalSpelling;
+    public string developerNote;
 }

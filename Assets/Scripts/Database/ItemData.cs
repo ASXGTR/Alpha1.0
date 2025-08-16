@@ -106,13 +106,13 @@ public class ItemData
     public string hydrationLoreTag;
 
     // 🧃 Container-Specific Flags
-    public bool isReusable; // Can be reused after emptying
-    public bool isFillable; // Can be filled from external sources
+    public bool isReusable;
+    public bool isFillable;
 
-    public float maxVolume; // Max liquid capacity
-    public float currentVolume; // Current liquid amount
+    public float maxVolume;
+    public float currentVolume;
 
-    public LiquidOriginType originType = LiquidOriginType.InventoryItem; // Referenced from shared enum
+    public LiquidOriginType originType = LiquidOriginType.InventoryItem;
 
     // 🧃 Container State Helpers
     public bool IsEmpty => currentVolume <= 0f;
@@ -135,7 +135,7 @@ public class ItemData
     public float GetEffectiveMercuryPoisoningChance() => diseaseProfile.mercuryPoisoningChance * (condition / 100f);
     public float GetEffectiveWaterborneVirusChance() => diseaseProfile.waterborneVirusChance * (condition / 100f);
 
-    // 🧪 Unified Disease Risk Dictionary (for UI or analytics)
+    // 🧪 Unified Disease Risk Dictionary
     public Dictionary<string, float> GetAllEffectiveDiseaseRisks()
     {
         return new Dictionary<string, float>
@@ -152,13 +152,25 @@ public class ItemData
         };
     }
 
-    // 🛠️ Condition Adjustment (e.g. opening tins)
+    // 🛠️ Condition Adjustment
     public void AdjustCondition(int amount)
     {
         condition = Mathf.Clamp(condition - amount, 0, 100);
     }
 
-    // 🧃 Hydration Logic Helper
+    // 🛠️ Opening Damage Based on Tool Used
+    public void ApplyOpeningDamage(string toolUsed)
+    {
+        float lossFactor = ConditionDevaluationTable.GetLossForTool(toolUsed);
+        int lossAmount = Mathf.RoundToInt(condition * lossFactor);
+        AdjustCondition(lossAmount);
+
+#if UNITY_EDITOR
+        Debug.Log($"Opened {itemID} with {toolUsed}, lost {lossAmount} condition.");
+#endif
+    }
+
+    // 🧃 Hydration Logic
     public bool IsDrinkable()
     {
         return liquidType == LiquidType.CleanWater ||
@@ -168,25 +180,8 @@ public class ItemData
                liquidType == LiquidType.Alcohol;
     }
 
-    // 🧃 Liquid Purification Logic
-    public bool CanBePurified()
-    {
-        return liquidType == LiquidType.UncleanWater && canBeBoiledForPurification;
-    }
-
-    public bool IsPurified()
-    {
-        return isBoiled && isCooledAfterBoil;
-    }
-
-    // 🧃 Liquid Usage Logic
-    public bool IsUsableForCleaning()
-    {
-        return usedForCleaning && IsPurified();
-    }
-
-    public bool IsUsableForCookingLiquid()
-    {
-        return usedInCookingLiquid && IsPurified();
-    }
+    public bool CanBePurified() => liquidType == LiquidType.UncleanWater && canBeBoiledForPurification;
+    public bool IsPurified() => isBoiled && isCooledAfterBoil;
+    public bool IsUsableForCleaning() => usedForCleaning && IsPurified();
+    public bool IsUsableForCookingLiquid() => usedInCookingLiquid && IsPurified();
 }
